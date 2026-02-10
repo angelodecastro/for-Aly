@@ -1,0 +1,348 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    cursor: url('./images/pointer.png'), auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    background: #111;
+}
+
+/* Start Screen */
+#start-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d1b2e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#startButton {
+    background: linear-gradient(135deg, #DC143C 0%, #FF6B6B 100%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+#startButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(220, 20, 60, 0.6);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Valentine's Button (Transition to Slideshow) */
+#valentinesButton {
+    display: none;
+    position: absolute;
+    background: linear-gradient(135deg, #DC143C 0%, #FF6B6B 100%);
+    border: 3px solid #DC143C;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-radius: 50px;
+    top: calc(50% + 150px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(220, 20, 60, 0.4);
+    animation: heartbeat 1.5s infinite;
+}
+
+#valentinesButton:hover {
+    background: linear-gradient(135deg, #FF6B6B 0%, #DC143C 100%);
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 8px 25px rgba(220, 20, 60, 0.6);
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: translateX(-50%) scale(1);
+    }
+    10%, 30% {
+        transform: translateX(-50%) scale(1.05);
+    }
+    20%, 40% {
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+/* Slideshow Container */
+#slideshow-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1000;
+}
+
+.slideshow-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.slide img,
+.slide video {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(64, 224, 208, 0.3);
+}
+
+.slide video {
+    outline: none;
+}
+
+.caption {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #40E0D0;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    max-width: 80%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Navigation Buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(220, 20, 60, 0.7);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.nav-button:hover {
+    background: rgba(220, 20, 60, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.nav-button.prev {
+    left: 20px;
+}
+
+.nav-button.next {
+    right: 20px;
+}
+
+/* Slide Counter */
+.slide-counter {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #40E0D0;
+    font-size: 18px;
+    z-index: 10;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Final Message Scene */
+#final-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a0a0f 0%, #0a1a1f 50%, #1a0a0f 100%);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+#final-message.active {
+    display: flex;
+}
+
+.valentine-text {
+    text-align: center;
+    color: #fff;
+}
+
+.valentine-text h1 {
+    font-size: 60px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #40E0D0 0%, #DC143C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(64, 224, 208, 0.5);
+    opacity: 0;
+}
+
+.valentine-text h2 {
+    font-size: 80px;
+    margin: 20px 0;
+    color: #DC143C;
+    text-shadow: 0 0 40px rgba(220, 20, 60, 0.8);
+    opacity: 0;
+}
+
+.love-message {
+    font-size: 100px;
+    margin: 30px 0;
+    color: #40E0D0;
+    text-shadow: 0 0 50px rgba(64, 224, 208, 0.8);
+    font-weight: bold;
+    opacity: 0;
+}
+
+.hearts {
+    font-size: 60px;
+    margin-top: 30px;
+    opacity: 0;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Fade-in animations for final message */
+.fade-in-1 {
+    animation: fadeInText 1s ease-in-out 0.5s forwards;
+}
+
+.fade-in-2 {
+    animation: fadeInText 1s ease-in-out 1.5s forwards;
+}
+
+.fade-in-3 {
+    animation: fadeInText 1s ease-in-out 2.5s forwards;
+}
+
+.fade-in-4 {
+    animation: fadeInText 1s ease-in-out 3.5s forwards;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .caption {
+        font-size: 18px;
+        bottom: 60px;
+    }
+
+    .nav-button {
+        font-size: 24px;
+        padding: 10px 15px;
+    }
+
+    .valentine-text h1 {
+        font-size: 40px;
+    }
+
+    .valentine-text h2 {
+        font-size: 50px;
+    }
+
+    .love-message {
+        font-size: 60px;
+    }
+
+    .hearts {
+        font-size: 40px;
+    }
+
+    #startButton {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    #valentinesButton {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}

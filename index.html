@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sojijr/valentine-website/main/public/images/favicon.png">
+    <link rel="icon" href="public/images/favicon.png" type="image/x-icon" />  
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body>
+    <!-- Start Experience Button -->
+    <div id="start-screen">
+      <button id="startButton">Start Our Journey ❤</button>
+    </div>
+
+    <!-- Scene 1: Starfield with Messages -->
+    <canvas id="starfield"></canvas>
+    <button id="valentinesButton">See Our Moments ❤</button>
+
+    <!-- Scene 2: Photo/Video Slideshow -->
+    <div id="slideshow-container">
+      <div class="slideshow-wrapper">
+        <div class="slide active">
+          <img src="public/media/IMG_1788.jpg" alt="Our Moment">
+          <p class="caption">Every moment with you is a treasure</p>
+        </div>
+        <div class="slide">
+          <img src="public/media/IMG_2197.jpg" alt="Our Moment">
+          <p class="caption">Your smile lights up my world</p>
+        </div>
+        <div class="slide">
+          <img src="public/media/IMG_2404.jpg" alt="Our Moment">
+          <p class="caption">Together, we create beautiful memories</p>
+        </div>
+        <div class="slide">
+          <img src="public/media/IMG_3616.jpg" alt="Our Moment">
+          <p class="caption">You make every day feel like magic</p>
+        </div>
+        <div class="slide">
+          <img src="public/media/IMG_3928.jpg" alt="Our Moment">
+          <p class="caption">With you, I've found my home</p>
+        </div>
+        <div class="slide">
+          <img src="public/media/IMG_4500.jpg" alt="Our Moment">
+          <p class="caption">Your love is my greatest adventure</p>
+        </div>
+        <div class="slide">
+          <img src="public/media/IMG_9426.jpg" alt="Our Moment">
+          <p class="caption">Thank you for being my everything</p>
+        </div>
+        <div class="slide">
+          <video src="public/media/IMG_4889.mp4" playsinline muted></video>
+          <p class="caption">Forever grateful for you</p>
+        </div>
+      </div>
+      <button class="nav-button prev">❮</button>
+      <button class="nav-button next">❯</button>
+      <div class="slide-counter"><span class="current-slide">1</span> / <span class="total-slides">8</span></div>
+    </div>
+
+    <!-- Scene 3: Final Valentine's Message -->
+    <div id="final-message">
+      <div class="valentine-text">
+        <h1 class="fade-in-1">Happy Valentine's Day</h1>
+        <h2 class="fade-in-2">Aly</h2>
+        <p class="love-message fade-in-3">I LOVE YOU</p>
+        <div class="hearts fade-in-4">❤️ ❤️ ❤️</div>
+      </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="iris-audio" loop>
+      <source src="public/audio/iris.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="heaven-audio" loop>
+      <source src="public/audio/heaven.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
