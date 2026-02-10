@@ -180,7 +180,7 @@ function drawText() {
         context.shadowOffsetX = 0;
         context.shadowOffsetY = 0;
         context.fillStyle = `${color.color}, ${opacity})`;
-        context.fillText("everyday I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
+        context.fillText("almost 11 years with you, and every day I fall in love with you all over again", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 250 && frameNumber < 500){
@@ -190,7 +190,7 @@ function drawText() {
         context.shadowOffsetX = 0;
         context.shadowOffsetY = 0;
         context.fillStyle = `${color.color}, ${opacity})`;
-        context.fillText("everyday I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
+        context.fillText("almost 11 years with you, and every day I fall in love with you all over again", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -207,9 +207,9 @@ function drawText() {
         context.fillStyle = `${color.color}, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["amongst trillions and trillions of stars,", "over billions of years"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["through every season, every moment,", "every memory we've built together"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("amongst trillions and trillions of stars, over billions of years", canvas.width/2, canvas.height/2);
+            context.fillText("through every season, every moment, every memory we've built together", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -223,9 +223,9 @@ function drawText() {
         context.fillStyle = `${color.color}, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["amongst trillions and trillions of stars,", "over billions of years"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["through every season, every moment,", "every memory we've built together"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("amongst trillions and trillions of stars, over billions of years", canvas.width/2, canvas.height/2);
+            context.fillText("through every season, every moment, every memory we've built together", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity - 0.01;
@@ -242,7 +242,7 @@ function drawText() {
         context.shadowOffsetX = 0;
         context.shadowOffsetY = 0;
         context.fillStyle = `${color.color}, ${opacity})`;
-        context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
+        context.fillText("you've been my best friend, my love, my home", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
@@ -252,7 +252,7 @@ function drawText() {
         context.shadowOffsetX = 0;
         context.shadowOffsetY = 0;
         context.fillStyle = `${color.color}, ${opacity})`;
-        context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
+        context.fillText("you've been my best friend, my love, my home", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -267,7 +267,7 @@ function drawText() {
         context.shadowOffsetX = 0;
         context.shadowOffsetY = 0;
         context.fillStyle = `${color.color}, ${opacity})`;
-        context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
+        context.fillText("and I still get butterflies when I see you smile", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
@@ -277,7 +277,7 @@ function drawText() {
         context.shadowOffsetX = 0;
         context.shadowOffsetY = 0;
         context.fillStyle = `${color.color}, ${opacity})`;
-        context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
+        context.fillText("and I still get butterflies when I see you smile", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -294,9 +294,9 @@ function drawText() {
         context.fillStyle = `${color.color}, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and yet here I am to get the impossible", "chance to get to know you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["after all this time, you're still the best", "part of my every day"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("and yet here I am to get the impossible chance to get to know you", canvas.width/2, canvas.height/2);
+            context.fillText("after all this time, you're still the best part of my every day", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -310,9 +310,9 @@ function drawText() {
         context.fillStyle = `${color.color}, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and yet here I am to get the impossible", "chance to get to know you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["after all this time, you're still the best", "part of my every day"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("and yet here I am to get the impossible chance to get to know you", canvas.width/2, canvas.height/2);
+            context.fillText("after all this time, you're still the best part of my every day", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity - 0.01;
@@ -331,9 +331,9 @@ function drawText() {
         context.fillStyle = `${color.color}, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["I love you so much Aly, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["I love you so much Aly,", "more than words could ever say"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("I love you so much Aly, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
+            context.fillText("I love you so much Aly, more than words could ever say", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -348,9 +348,9 @@ function drawText() {
         context.fillStyle = `${color.color}, ${secondOpacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and I can't wait to spend all the time in", "the world to share that love with you!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+            drawTextWithLineBreaks(["here's to forever with you,", "my love"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
         } else {
-            context.fillText("and I can't wait to spend all the time in the world to share that love with you!", canvas.width/2, (canvas.height/2 + 50));
+            context.fillText("here's to forever with you, my love", canvas.width/2, (canvas.height/2 + 50));
         }
 
         secondOpacity = secondOpacity + 0.01;
